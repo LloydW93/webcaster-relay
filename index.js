@@ -108,6 +108,7 @@ class StreamingSession {
     }
 
     onClose(reasonCode, description) {
+        this.log('WSS Connection closed');
         active_connections.splice(active_connections.indexOf(this.id), 1);
         if (this.icecast_connection && !this.icecast_connection.connecting && !this.icecast_connection.destroyed) {
             this.icecast_connection.end();
