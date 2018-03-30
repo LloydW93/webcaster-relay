@@ -132,7 +132,7 @@ class StreamingSession {
             let me = this;
 
             request(options, (error, response, body) => {
-                if (response.statusCode === 202) {
+                if (response && response.statusCode === 202) {
                     // Yay!
                     this.log('Authentication successful');
                     this.authenticated = true;
