@@ -1,0 +1,9 @@
+{
+    "cert": "/etc/webcaster-relay/service.crt",
+    "key": "/etc/webcaster-relay/service.key",
+    "icyHost": "127.0.0.1",
+    "icyPort": "8000",
+    "icyUser": "source",
+    "icyPass": "hackme",
+    "jarsJwtValidationUrl": "http://localhost:8888/jars/connect"
+}
