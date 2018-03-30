@@ -143,6 +143,7 @@ class StreamingSession {
                     this.log('Authentication failed (1)', error);
                     this.log('Authentication failed (2)', response);
                     this.log('Authentication failed (3)', body);
+                    this.connection.close(1008, "Invalid authentication data.");
                 }
             });
         }
